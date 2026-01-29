@@ -1,0 +1,1 @@
+print("Modern Statistics with ANN project initialized 🚀")
