@@ -29,7 +29,7 @@ def generate_synthetic_data(
     x = np.linspace(-3, 3, n_samples)
     noise = np.random.normal(0, noise_std, size=n_samples)
     #Sinosoidal data:
-    # y = np.sin(x) + noise
+    y = np.sin(x) + noise
 
     #Linear data:
     #y = 2 * x + 1 + noise
@@ -41,7 +41,7 @@ def generate_synthetic_data(
     # y = np.sin(x) + 0.3 * x**2 + noise
 
     # ⁠⁠Exponential Growth / Decay:
-    y = np.exp(x) + noise
+    # y = np.exp(x) + noise
 
     # Discontinuous Function:
     # y = np.where(x < 0, x, x**2) + noise
