@@ -30,7 +30,7 @@ def run_linear_regression(filename="synthetic_data.csv"):
     # Error metric (Mean Squared Error)
     mse = mean_squared_error(y, y_pred)
 
-    print("📊 Classical Statistics: Linear Regression")
+    print("Classical Statistics: Linear Regression")
     print(f"Estimated model: y = {model.coef_[0]:.4f} * x + {model.intercept_:.4f}")
     print(f"Mean Squared Error (MSE): {mse:.6f}")
 

@@ -49,7 +49,7 @@ def compare_models(filename="synthetic_data.csv"):
     # ===============================
     # Results
     # ===============================
-    print("\n📊 MODEL COMPARISON RESULTS")
+    print("\nMODEL COMPARISON RESULTS")
     print(f"Classical Linear Regression MSE : {mse_lin:.6f}")
     print(f"ANN Model MSE                  : {mse_ann:.6f}")
 

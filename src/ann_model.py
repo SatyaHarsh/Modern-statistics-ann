@@ -50,7 +50,7 @@ def run_ann_model(filename="synthetic_data.csv"):
     # Error metric
     mse = mean_squared_error(y, y_pred)
 
-    print("🧠 Modern Statistics: ANN Model")
+    print("Modern Statistics: ANN Model")
     print(f"Mean Squared Error (MSE): {mse:.6f}")
 
     # Visualization

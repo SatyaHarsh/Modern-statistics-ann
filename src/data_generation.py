@@ -28,7 +28,23 @@ def generate_synthetic_data(
 
     x = np.linspace(-3, 3, n_samples)
     noise = np.random.normal(0, noise_std, size=n_samples)
-    y = np.sin(x) + noise
+    #Sinosoidal data:
+    # y = np.sin(x) + noise
+
+    #Linear data:
+    #y = 2 * x + 1 + noise
+
+    # Polynomial Equation:
+    # y = x**2 + noise
+
+    # Periodic / Trigonometric:
+    # y = np.sin(x) + 0.3 * x**2 + noise
+
+    # ⁠⁠Exponential Growth / Decay:
+    y = np.exp(x) + noise
+
+    # Discontinuous Function:
+    # y = np.where(x < 0, x, x**2) + noise
 
     data = pd.DataFrame({
         "x": x,
@@ -50,7 +66,7 @@ def save_dataset(data: pd.DataFrame, filename: str = "synthetic_data.csv"):
     file_path = os.path.join(dataset_dir, filename)
     data.to_csv(file_path, index=False)
 
-    print(f"✅ Dataset saved at: {file_path}")
+    print(f"Dataset saved at: {file_path}")
 
 
 if __name__ == "__main__":
